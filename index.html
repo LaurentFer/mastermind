@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link href="Style.css" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
+		<title>Mastermind</title>
+	</head>
+	
+	<body onload="jouer()">
+		
+		<div id="block_page">
+		
+			<header>
+				<h1>MasterMind</h1>
+			<!--	<div>
+					<form>
+							<input type="radio" name="age" value="jouer" id="jouer" /> <label for="jouer">Jouer</label><br />
+							<input type="radio" name="age" value="parametre" id="parametre" /> <label for="parametre">Paramètres</label><br />
+							<input type="radio" name="age" value="score" id="score" /> <label for="score">Score</label><br />
+					</form>
+				</div>-->
+			</header>
+			
+			<br/>
+			
+			<section id="bandeau">
+				<div id ="c1" class="choix" onclick="javascript:CliqueRond(this.id)"></div>
+				<div id ="c2" class="choix" onclick="javascript:CliqueRond(this.id)"></div>
+				<div id ="c3" class="choix" onclick="javascript:CliqueRond(this.id)"></div>
+				<div id ="c4" class="choix" onclick="javascript:CliqueRond(this.id)"></div>
+				<div id ="c5" class="choix" onclick="javascript:CliqueRond(this.id)"></div>
+				<div id ="c6" class="choix" onclick="javascript:CliqueRond(this.id)"></div>	
+				
+				<div id>
+					<button type="button" onclick="javascript:Rejouer()">Rejouer</button> 
+				</div>
+				
+			</section>
+			
+			<br/>
+			
+			<section id="block_jeu">
+			
+				<div id="tab_propo">
+				
+					<table>
+						<caption>Grille</caption>	
+						<tbody>
+								<tr>
+									<td> <div id="case1" class="case"></div> 
+									<td> <div id="case2" class="case"></div> 
+									<td> <div id="case3" class="case"></div> 
+									<td> <div id="case4" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case5" class="case"></div> 
+									<td> <div id="case6" class="case"></div> 
+									<td> <div id="case7" class="case"></div> 
+									<td> <div id="case8" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case9" class="case"></div> 
+									<td> <div id="case10" class="case"></div> 
+									<td> <div id="case11" class="case"></div> 
+									<td> <div id="case12" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case13" class="case"></div> 
+									<td> <div id="case14" class="case"></div> 
+									<td> <div id="case15" class="case"></div> 
+									<td> <div id="case16" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case17" class="case"></div> 
+									<td> <div id="case18" class="case"></div> 
+									<td> <div id="case19" class="case"></div> 
+									<td> <div id="case20" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case21" class="case"></div> 
+									<td> <div id="case22" class="case"></div> 
+									<td> <div id="case23" class="case"></div> 
+									<td> <div id="case24" class="case"></div> 									
+								</tr>
+								<tr>
+									<td> <div id="case25" class="case"></div> 
+									<td> <div id="case26" class="case"></div> 
+									<td> <div id="case27" class="case"></div> 
+									<td> <div id="case28" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case29" class="case"></div> 
+									<td> <div id="case30" class="case"></div> 
+									<td> <div id="case31" class="case"></div> 
+									<td> <div id="case32" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case33" class="case"></div> 
+									<td> <div id="case34" class="case"></div> 
+									<td> <div id="case35" class="case"></div> 
+									<td> <div id="case36" class="case"></div> 									
+								</tr>	
+								<tr>
+									<td> <div id="case37" class="case"></div> 
+									<td> <div id="case38" class="case"></div> 
+									<td> <div id="case39" class="case"></div> 
+									<td> <div id="case40" class="case"></div> 									
+								</tr>									
+						</tbody>
+					</table>
+				</div>
+				
+				<div id="tab_retour">
+					<table>
+						<caption>OK->MP->NUL</caption>
+						<tbody>
+							<tr>
+								<td id="ana1" class="case"></td>
+								<td id="ana2" class="case"></td>
+								<td id="ana3" class="case"></td>
+								<td id="ana4" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana5" class="case"></td>
+								<td id="ana6" class="case"></td>
+								<td id="ana7" class="case"></td>
+								<td id="ana8" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana9" class="case"></td>
+								<td id="ana10" class="case"></td>
+								<td id="ana11" class="case"></td>
+								<td id="ana12" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana13" class="case"></td>
+								<td id="ana14" class="case"></td>
+								<td id="ana15" class="case"></td>
+								<td id="ana16" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana17" class="case"></td>
+								<td id="ana18" class="case"></td>
+								<td id="ana19" class="case"></td>
+								<td id="ana20" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana21" class="case"></td>
+								<td id="ana22" class="case"></td>
+								<td id="ana23" class="case"></td>
+								<td id="ana24" class="case"></td>
+							</tr>
+							<tr>
+								<td id="ana25" class="case"></td>
+								<td id="ana26" class="case"></td>
+								<td id="ana27" class="case"></td>
+								<td id="ana28" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana29" class="case"></td>
+								<td id="ana30" class="case"></td>
+								<td id="ana31" class="case"></td>
+								<td id="ana32" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana33" class="case"></td>
+								<td id="ana34" class="case"></td>
+								<td id="ana35" class="case"></td>
+								<td id="ana36" class="case"></td>
+							</tr>	
+							<tr>
+								<td id="ana37" class="case"></td>
+								<td id="ana38" class="case"></td>
+								<td id="ana39" class="case"></td>
+								<td id="ana40" class="case"></td>
+							</tr>								
+						</tbody>
+					</table>
+				</div>
+				
+				<div id="tab_result">
+					<table>
+						<caption>Statut</caption><br/>
+						<tr>
+							<td id="resultat">&nbsp; </td>
+						<tr>
+					</table>
+					<p>Parties gagnées :</p>
+					<input type="text" name="score" id="score" size="10"/>
+					<p>Chrono :</p>
+					<input type="text" name="chrono" id="chrono" size="10"/>
+					<p>Meilleur Temps :</p>
+					<input type="text" name="mTemps" id="mTemps" size="10"/>
+				</div>
+			
+			</section>
+					
+		</div>
+	</body>
+
+</html>
