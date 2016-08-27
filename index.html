@@ -10,7 +10,11 @@
 		<title>Mastermind</title>
 	</head>
 	
-	<body onload="constructTabPropo(),jouer()">
+	<body onload="
+		constructTab('case','Grille','tab_propo'),
+		constructTab('ana','OK->MP->NUL','tab_retour'),
+		constructRes();
+		jouer()">
 		
 		<div id="block_page">
 		
@@ -36,91 +40,7 @@
 			
 			<br/>
 			
-			<section id="block_jeu">			
-				
-				<div id="tab_retour">
-					<table>
-						<caption>OK->MP->NUL</caption>
-						<tbody>
-							<tr>
-								<td id="ana1" class="case"></td>
-								<td id="ana2" class="case"></td>
-								<td id="ana3" class="case"></td>
-								<td id="ana4" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana5" class="case"></td>
-								<td id="ana6" class="case"></td>
-								<td id="ana7" class="case"></td>
-								<td id="ana8" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana9" class="case"></td>
-								<td id="ana10" class="case"></td>
-								<td id="ana11" class="case"></td>
-								<td id="ana12" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana13" class="case"></td>
-								<td id="ana14" class="case"></td>
-								<td id="ana15" class="case"></td>
-								<td id="ana16" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana17" class="case"></td>
-								<td id="ana18" class="case"></td>
-								<td id="ana19" class="case"></td>
-								<td id="ana20" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana21" class="case"></td>
-								<td id="ana22" class="case"></td>
-								<td id="ana23" class="case"></td>
-								<td id="ana24" class="case"></td>
-							</tr>
-							<tr>
-								<td id="ana25" class="case"></td>
-								<td id="ana26" class="case"></td>
-								<td id="ana27" class="case"></td>
-								<td id="ana28" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana29" class="case"></td>
-								<td id="ana30" class="case"></td>
-								<td id="ana31" class="case"></td>
-								<td id="ana32" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana33" class="case"></td>
-								<td id="ana34" class="case"></td>
-								<td id="ana35" class="case"></td>
-								<td id="ana36" class="case"></td>
-							</tr>	
-							<tr>
-								<td id="ana37" class="case"></td>
-								<td id="ana38" class="case"></td>
-								<td id="ana39" class="case"></td>
-								<td id="ana40" class="case"></td>
-							</tr>								
-						</tbody>
-					</table>
-				</div>
-				
-				<div id="tab_result">
-					<table>
-						<caption>Statut</caption><br/>
-						<tr>
-							<td id="resultat">&nbsp; </td>
-						<tr>
-					</table>
-					<p>Parties gagnées :</p>
-					<input type="text" name="score" id="score" size="10"/>
-					<p>Chrono :</p>
-					<input type="text" name="chrono" id="chrono" size="10"/>
-					<p>Meilleur Temps :</p>
-					<input type="text" name="mTemps" id="mTemps" size="10"/>
-				</div>
-			
+			<section id="block_jeu">								
 			</section>
 					
 		</div>
