@@ -1,0 +1,126 @@
+#block_page
+{
+	display			: flex;
+	flex-direction 	: column;
+	width			: 100%;
+	margin			: auto;
+	background : Beige  ;
+}
+
+header
+{
+	display 			: flex;
+	flex-direction		: row;
+	justify-content 	: center;
+	align-items			: baseline;
+	font-family			: Arial, sans-serif;
+	height				: 100%;
+    border				: 3px solid #760001;
+	background-image 	: url(wood.jpg);
+}
+
+#bandeau
+{
+	display 		: flex;
+	flex-direction	: row;
+	justify-content	: space-around;
+	margin-left		: 150px;
+	margin-right	: 150px;
+	padding-top		: 25px;
+	padding-bottom 	: 15px;
+	border			: 3px solid #760001;
+	min-width 		: 200px;
+	background-image : url(wood.jpg);
+}
+
+#score
+{
+	text-align : center;
+}
+
+#chrono
+{
+	text-align : center;
+}
+
+#mTemps
+{
+	text-align : center;
+}
+
+.choix
+{
+	overflow					: hidden;
+		-webkit-border-radius	: 50px;
+		-moz-border-radius		: 50px;
+    border-radius				: 50px;
+    width						: 30px;
+    height						: 30px;
+	cursor 						: pointer; /*zone cliquable*/
+}
+
+/*.choix:nth-child(1)*/
+#c1
+{
+	background-color :red;
+}
+
+/*.choix:nth-child(2)*/
+#c2
+{
+	background-color :blue;
+}
+
+/*.choix:nth-child(3)*/
+#c3
+{
+	background-color :yellow;
+}
+
+/*.choix:nth-child(4)*/
+#c4
+{
+	background-color :green;
+}
+
+/*.choix:nth-child(5)*/
+#c5
+{
+	background-color :orange;
+}
+
+/*.choix:nth-child(6)*/
+#c6
+{
+	background-color :grey;
+}
+
+.case
+{
+	overflow					:hidden;
+		-webkit-border-radius	:50px;
+		-moz-border-radius		:50px;
+    border-radius				:50px;
+    width						:30px;
+    height						:30px;
+}
+
+#block_jeu
+{
+	border			: 3px solid #760001;
+	display 		: flex;
+	flex-direction	: row;
+	justify-content	: space-around;
+	background-image : url(../img/wood.jpg);
+}
+
+table
+{
+    border-collapse	: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td,th
+{	
+    border			: 1px solid black;
+	align-items		:center;
+
+	}
