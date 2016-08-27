@@ -5,11 +5,12 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="Style.css" rel="stylesheet">
+		<script type="text/javascript" src="construct.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		<title>Mastermind</title>
 	</head>
 	
-	<body onload="jouer()">
+	<body onload="constructTabPropo(),jouer()">
 		
 		<div id="block_page">
 		
@@ -35,76 +36,7 @@
 			
 			<br/>
 			
-			<section id="block_jeu">
-			
-				<div id="tab_propo">
-				
-					<table>
-						<caption>Grille</caption>	
-						<tbody>
-								<tr>
-									<td> <div id="case1" class="case"></div> 
-									<td> <div id="case2" class="case"></div> 
-									<td> <div id="case3" class="case"></div> 
-									<td> <div id="case4" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case5" class="case"></div> 
-									<td> <div id="case6" class="case"></div> 
-									<td> <div id="case7" class="case"></div> 
-									<td> <div id="case8" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case9" class="case"></div> 
-									<td> <div id="case10" class="case"></div> 
-									<td> <div id="case11" class="case"></div> 
-									<td> <div id="case12" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case13" class="case"></div> 
-									<td> <div id="case14" class="case"></div> 
-									<td> <div id="case15" class="case"></div> 
-									<td> <div id="case16" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case17" class="case"></div> 
-									<td> <div id="case18" class="case"></div> 
-									<td> <div id="case19" class="case"></div> 
-									<td> <div id="case20" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case21" class="case"></div> 
-									<td> <div id="case22" class="case"></div> 
-									<td> <div id="case23" class="case"></div> 
-									<td> <div id="case24" class="case"></div> 									
-								</tr>
-								<tr>
-									<td> <div id="case25" class="case"></div> 
-									<td> <div id="case26" class="case"></div> 
-									<td> <div id="case27" class="case"></div> 
-									<td> <div id="case28" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case29" class="case"></div> 
-									<td> <div id="case30" class="case"></div> 
-									<td> <div id="case31" class="case"></div> 
-									<td> <div id="case32" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case33" class="case"></div> 
-									<td> <div id="case34" class="case"></div> 
-									<td> <div id="case35" class="case"></div> 
-									<td> <div id="case36" class="case"></div> 									
-								</tr>	
-								<tr>
-									<td> <div id="case37" class="case"></div> 
-									<td> <div id="case38" class="case"></div> 
-									<td> <div id="case39" class="case"></div> 
-									<td> <div id="case40" class="case"></div> 									
-								</tr>									
-						</tbody>
-					</table>
-				</div>
+			<section id="block_jeu">			
 				
 				<div id="tab_retour">
 					<table>
