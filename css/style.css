@@ -4,7 +4,7 @@
 	flex-direction 	: column;
 	width			: 100%;
 	margin			: auto;
-	background : Beige  ;
+	background 		: Beige  ;
 }
 
 header
@@ -25,12 +25,10 @@ header
 	display 		: flex;
 	flex-direction	: row;
 	justify-content	: space-around;
-	margin-left		: 150px;
-	margin-right	: 150px;
-	padding-top		: 25px;
-	padding-bottom 	: 15px;
+	padding-top		: 2%;
+	padding-bottom 	: 2%;
 	border			: 3px solid #760001;
-	min-width 		: 200px;
+	min-width 		: 250px;
 	background-image : url(../img/wood.jpg);
 }
 
@@ -143,4 +141,23 @@ td,th
     border			: 1px solid black;
 	align-items		:center;
 
+}
+
+@media screen and (max-width :640px){
+	header
+	{
+		display : none;
 	}
+}
+
+@media screen and (min-width :640px){
+	#bandeau
+	{
+	margin-left		: 150px;
+	margin-right	: 150px;
+	}
+}
+
+
+	
+	
