@@ -17,6 +17,7 @@ header
 	height				: 100%;
     border				: 3px solid #760001;
 	background-image 	: url(wood.jpg);
+	min-width 			: 200px;
 }
 
 #bandeau
@@ -57,6 +58,12 @@ header
     width						: 30px;
     height						: 30px;
 	cursor 						: pointer; /*zone cliquable*/
+}
+
+.choix:hover
+{
+    width						: 35px;
+    height						: 35px;
 }
 
 /*.choix:nth-child(1)*/
@@ -111,7 +118,20 @@ header
 	display 		: flex;
 	flex-direction	: row;
 	justify-content	: space-around;
-	background-image : url(../img/wood.jpg);
+	background-image: url(../img/wood.jpg);
+	flex-wrap		: wrap;
+}
+
+#tab_propo
+{
+	align-items : center;
+	justify-content : center;
+}
+
+#tab_retour
+{
+	align-items : center;
+	justify-content : center;
 }
 
 table
